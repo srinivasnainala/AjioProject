@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_For_Ajio</title>
+    <style>
+        .Login
+        {
+            margin-top: 80px;
+            text-align: center;
+        }
+        .loginbutton
+        {
+            margin-left: 60px; 
+            border-radius: 15px;
+            border-color:rgb(128, 122, 122) ;
+            padding: 3px 15px;
+            color: white; 
+            background-color: rgb(128, 122, 122);
+        }
+        .loginbutton:hover
+        {
+            background-color: white;
+            color: rgb(128, 122, 122);
+            border-color: rgb(128, 122, 122);
+        }
+    </style>
+</head>
+<body>
+    <div class="Login">
+        <img src="/home/miracle/Desktop/html_Practise/AjioProject/logo.jpg" style="margin-left: 74px;height: 30px;width: 100px;margin-bottom: 50px;" alt=""><br>
+    <label for="Username" style="font-weight: 800;font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 20px;">Username:</label>
+    <input type="text" id="username" placeholder="Enter your username" style="margin-bottom: 15px;padding: 6px 30px;"><br>
+    <label for="password" style="font-weight: 800;font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 20px;">password:</label>
+    <input type="password" id="password" placeholder="Enter your password" style="margin-bottom: 15px;padding: 5px 30px;"><br>
+    <a href="" style="margin-left: 100px;">forgotPassword</a>
+    <input class="loginbutton" type="button" value="Login" onclick="login()">
+
+    </div>
+    <script>
+        function login()
+        {
+            const username="vasu";
+            const password="vasu1234";
+            const user=document.getElementById("username").value;
+            const pass=document.getElementById("password").value;
+            if(user!=""||pass!="")
+        {
+           if(user==username&&pass==password)
+           {
+            alert("Welcome to AJIO");
+            window.location.href="/home/miracle/Desktop/html_Practise/AjioProject/shophere.html";
+           }
+           else
+           {
+            alert("Enter valid credentials");
+           }
+        }
+        else
+        {
+            alert("Please enter credentials to login");
+        }
+        }
+    </script>
+</body>
+</html>

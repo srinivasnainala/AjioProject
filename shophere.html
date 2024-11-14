@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping_Page</title>
+    <style>
+        .content
+        {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .head
+        {
+            display: grid;
+            grid-template-columns: 300px 40px 40px 40px;
+        }
+        .head1
+        {
+            display: grid;
+            grid-template-columns:30px 30px 30px;
+        }
+        .head2
+        {
+            display: grid;
+            grid-template-columns:100px 100px 100px 
+        }
+        .head3
+        {
+            display: grid;
+            grid-template-columns:400px 140px 1fr; 
+        }
+        .head7
+        {
+            margin-top: -28px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="head">
+    <input type="text" placeholder=" Search by Product ...    &#x1F4F7;" style="margin-left: 400px;width: 200px;border-radius: 10px;border: 0.5px solid;"  >    
+    <input type="button" value="&#x1F514;" style="margin-left: 330px;width: 40px;font-size: 20px; background-color: transparent;border: none;" onclick="notifications()">    
+    <input type="button" value="&#10084;" style="margin-left: 320px;width: 40px;font-size: 22px; background-color: transparent;border: none;" onclick="wishlist()">
+    <input type="button" value="&#x1F392;" style="margin-left: 320px;width: 40px;font-size: 20px; background-color: transparent;border: none;" onclick="bag()">    
+        </div>
+      <div class="head1">
+        <img src="/home/miracle/Desktop/html_Practise/AjioProject/images/image1.jpg" style="border-radius: 15px; margin-top: 20px; margin-left: 400px; height: 100px;width: 100px;" alt="" onclick="women()">
+        <img src="/home/miracle/Desktop/html_Practise/AjioProject/images/image2.jpg" style="border-radius: 15px; margin-top: 20px; margin-left: 485px; height: 100px;width: 100px;" alt="" onclick="men()">
+        <img src="/home/miracle/Desktop/html_Practise/AjioProject/images/image3.jpg" style="border-radius: 15px; margin-top: 20px; margin-left: 570px; height: 100px;width: 100px;" alt="">
+      </div>
+      <div class="head2">
+        <input type="button" value="women" style="margin-left: 420px;margin-top: 5px;background-color: transparent;border: none;width: 60px;" onclick="women()">
+        <input type="button" value="men" style="margin-left: 435px;margin-top: 5px;background-color: transparent;border: none;width: 60px;" onclick="men()">
+        <input type="button" value="Fashion" style="margin-left: 450px;margin-top: 5px;background-color: transparent;border: none;width: 60px;" onclick="fashion()">
+      </div>      
+      <div class="head3">
+        <img src="/home/miracle/Desktop/html_Practise/AjioProject/images/image4.jpg" style="margin-left: 395px; height: 350px;width: 350px;" alt="">
+      </div>
+      <p style="font-weight: bold;font-size: 25px;margin-top: -330px;margin-left: -300px">50-60% OFF</p>
+      <p style="font-size: 25px;margin-top: 20px;margin-bottom: 0px; margin-left: -270px;margin-top: 220px;">Premium Styles</p>
+      <input type="button" value="Diwali Deals" style="color: rgb(255, 38, 0); width: 300px; margin-left: -180px; font-weight: bold;font-size: 45px;background-color: transparent; border: none;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif" onclick="offer()"><br>
+      <img src="/home/miracle/Desktop/html_Practise/AjioProject/images/image5.jpg" style="height: 120px;width: 100px;margin-left: -117px;margin-top: 23px;border-radius: 12px;" alt="" onclick="show()">
+      <img src="/home/miracle/Desktop/html_Practise/AjioProject/images/image6.jpg" style="height: 120px;width: 100px;margin-left: 15px;margin-top: 23px;border-radius: 12px;" alt=""  onclick="show()">
+      <img src="/home/miracle/Desktop/html_Practise/AjioProject/images/image7.jpg" style="height: 120px;width: 100px;margin-left: 15px;margin-top: 23px;border-radius: 12px;" alt=""  onclick="show()">
+      <div class="head4">
+        <p style="margin-left: -120px;display: inline-block;font-weight: bold;margin-top: -10px;">MIN 45% OFF</p>
+        <p style="margin-left: 15px;display: inline-block;font-weight: bold;margin-top: -10px;">UNDER $399</p>
+        <p style="margin-left: 15px;display: inline-block;font-weight: bold;margin-top: -10px;" onclick="show()">MIN 65% OFF</p>
+      </div>
+      <img src="/home/miracle/Desktop/html_Practise/AjioProject/images/image8.jpg" style="height: 120px;width: 100px;margin-left: -117px;margin-top: -53px;border-radius: 12px;" alt="" onclick="show()">
+      <img src="/home/miracle/Desktop/html_Practise/AjioProject/images/image9.jpg" style="height: 120px;width: 100px;margin-left: 15px;margin-top: 23px;border-radius: 12px;" alt=""  onclick="show()">
+      <img src="/home/miracle/Desktop/html_Practise/AjioProject/images/image10.jpg" style="height: 120px;width: 100px;margin-left: 15px;margin-top: 23px;border-radius: 12px;" alt=""  onclick="show()">
+      <div class="head5">
+        <p style="margin-left: -120px;display: inline-block;font-weight: bold;margin-top: -130px;">MIN 45% OFF</p>
+        <p style="margin-left: 15px;display: inline-block;font-weight: bold;margin-top: -10px;">UNDER $509</p>
+        <p style="margin-left: 15px;display: inline-block;font-weight: bold;margin-top: -10px;" onclick="show()">MIN 75% OFF</p>
+      </div>
+      <img src="/home/miracle/Desktop/html_Practise/AjioProject/images/image11.jpg" style=" height: 350px;width: 350px;margin-left: -117px;margin-top: -5px;border-radius: 12px;" alt="" onclick="show()"><br>
+      <div class="head6">
+      <p style="margin-left: -120px;display: inline-block;font-weight: bold;margin-top: -330px;">Top Brands You Can't Miss!</p>
+      </div>
+      <div class="head7">
+      <img src="/home/miracle/Desktop/html_Practise/AjioProject/images/image12.jpg" style="height: 120px;width: 100px;margin-left: -117px;margin-top: -53px;border-radius: 12px;" alt="" onclick="show()">
+      <img src="/home/miracle/Desktop/html_Practise/AjioProject/images/image13.jpg" style="height: 120px;width: 100px;margin-left: 15px;margin-top: 23px;border-radius: 12px;" alt=""  onclick="show()">
+      <img src="/home/miracle/Desktop/html_Practise/AjioProject/images/image14.jpg" style="height: 120px;width: 100px;margin-left: 15px;margin-top: 23px;border-radius: 12px;" alt=""  onclick="show()">
+    </div>
+        <p style="margin-left: -120px;display: inline-block;font-weight: bold;margin-top: -130px;">MIN 35% OFF</p>
+        <p style="margin-left: 15px;display: inline-block;font-weight: bold;margin-top: -10px;">UNDER $300</p>
+        <p style="margin-left: 15px;display: inline-block;font-weight: bold;margin-top: -10px;" onclick="show()">MIN 55% OFF</p>
+     
+    </div>
+
+<script>
+     function show()
+    {
+        alert("Work in progress");
+    }
+    function women()
+    {
+        alert("Loading.. Click ok");
+        window.location.href="/home/miracle/Desktop/html_Practise/AjioProject/womenproducts.html";
+    }
+    function men()
+    {
+        alert("Loading...click ok");
+        window.location.href="/home/miracle/Desktop/html_Practise/AjioProject/menproducts.html";
+    }
+    function fashion()
+    {
+        alert("Work in progress");
+    }
+    function bag()
+    {
+        alert("Work in progress");
+    }
+    function wishlist()
+    {
+        alert("Work in progress");
+    }
+    function notifications()
+    {
+        alert("Work in progress");
+    }
+    function offer()
+    {
+        alert("Work in progress");
+    }
+    
+</script>
+</body>
+</html>
